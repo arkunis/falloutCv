@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV
+{% endblock %}
+
+{% block body %}
+
+	<section class="p-10">
+
+		<nav class="mb-10">
+			<ul class="flex flex-col lg:flex-row justify-around text-3xl">
+				<li>
+					<a class="cursor-pointer" id="comp">Compétences</a>
+				</li>
+				<li>
+					<a class="cursor-pointer" id="info">Informations</a>
+				</li>
+				<li>
+					<a class="cursor-pointer" id="contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<article>
+			<p id="otherText">
+				
+			</p>
+		</article>
+	</section>
+
+	<section class="fixed h-[17vh] bottom-0 w-full">
+
+		<div class="w-full flex flex-col lg:flex-row">
+
+			<p class="pipText w-full text-white text-2xl px-6 break-words overflow-y-auto h-[16vh] my-2 py-3">
+			</p>
+			<img src="{{ asset('img/pip1.png') }}" alt="pip boy" class="pipImg hidden lg:block z-10 relative right-0 -top-[150px] w-[35vh]">
+		</div>
+
+	</section>
+{% endblock %}
